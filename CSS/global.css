@@ -5,6 +5,10 @@
 html {
     overflow-x: hidden;
   }
+  body{
+    width: 100vw;
+    overflow: hidden;
+  }
 
 /*Inicio Seccion de Navegacion*/
     .navbar_header{
@@ -77,19 +81,22 @@ html {
     }
     .image_present{
         position: relative;
+     
         height: 100vh;
-        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
        
     }
 
-    .var_presetation {
-        width: 1550px;
-        height: 100%;
-        filter: brightness(0.8);
+    .var_presetation{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: top -440px right 0;
+        overflow-x: hidden;
     }
+
 
     .p1{
         display: inline-block;
@@ -188,70 +195,7 @@ html {
         gap: 40px;
     }
 
-  /* galeria de izquierda a derecha
-  .container_galeria{
-    display: flex;
-    padding-top: 50px;
-  }
-  .cont_castillo_izq{
-    width: 50vw;
-    background-color: chartreuse;
-    display: flex;
-
-  }
-  .con_ima_izq{
-
-    width: 400px;
-    height: 310px;
-  }
-  .con_ima_izq img{
-    width: 100%;
-    height: 100%;
-  }
-  .cont_castillo_der{
-    width: 50vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-  }
-  .cont_castillo_der #wwor, #porp_sal{
-    text-align: right;
-    padding-right: 100px;
-  }
-  .contenedor__sale{
-    display: flex;
-    margin-top: 40px;
-
-    gap: 60px;
-    justify-content: center;
-    margin-top: 23%;
-  }
-  #btn_view_izq{
-    background-color: transparent;
-    width: 150px;
-    border: black solid 1px;
-    border-radius: 20px;
-    color: white;
-    padding:5px 0;
-    left:6%;
-    padding-left: 15px;
-    display: flex;
-    cursor: pointer;
-    top:85%;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-}
-.cont_flec{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-#flecha_izq_i{
-    padding-left: 25px;
-}
-*/
+  
 .btn_vi_all_der{
     border: solid 1px black;
     background-color:transparent;
@@ -701,7 +645,8 @@ html {
         .navbar_logos{
             background-color: aqua;
             display: none;
-        }  
+        } 
+   
     }
     
 @media (max-width: 500px){
@@ -716,17 +661,11 @@ html {
             margin: 0px 50px 0px 10px;
             height: 50px;  
         }
-        .var_presetation{
-            height: 100%;
-            width: auto;
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
+ 
         .container_section_vertival_social{
             display: none;
         }
+    
     }
 
 @media (max-width:1024px) {
@@ -741,7 +680,10 @@ html {
             position: absolute;
             left: 10%;
         }
+        .container_section_vertival_social{
+            display: none;
     }
+}
     @media screen and (max-width: 600px) {
         #logo {
           display: none;
@@ -761,5 +703,158 @@ html {
       
         main img {
           object-position: center;
+        }
+        .container_section_vertival_social{
+            display: none;
+        }
+        .var_presetation {
+            object-position: center;
+     
+        }
+        .contenedor_textos_gal_izq{
+            display: flex;
+            flex-direction: column-reverse;
+            }
+            .paginacion_der{
+                display: none;
+            }
+            .btn_vi_all_der:hover{
+                background-color: white;
+            }
+            .btn_vi_all_der{
+                border: white;
+                color: #DF991B!important;
+            }
+
+            .textos_izq{
+                text-align: left;
+            }
+            .textos_izq span, h2{
+                text-align: left;
+                font-size: 22px;
+            }
+            .textos_izq h2{
+                text-align: left;
+                font-size: 32px;
+            }
+            .contenedor_textos_gal{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .paginacion_izq{
+                display: none;
+            }
+            .btn_vi_all:hover{
+
+                background-color: white;
+
+            }
+            .btn_vi_all{
+                border: white;
+                
+                color: #DF991B!important;
+            }
+
+            .textos span, h2{
+                text-align: left;
+                font-size: 22px;
+            }
+            .textos h2{
+                text-align: left;
+                font-size: 32px;
+            }
+            
+            .contenedor_imagenes_dev{
+                grid-template-columns: 1fr;
+            }
+            .contenedor_texto_dev span{
+                text-align: left;
+                font-size: 22px;
+            }
+            .contenedor_texto_dev h2{
+                text-align: left;
+                font-size: 32px;
+            }
+
+            .contenedor_services{
+                display: flex;
+                flex-direction: column-reverse;
+                align-content: center;
+                margin-bottom:80px;
+        
+            }
+            .contenedor_imag_services{
+                display: flex;
+                height: 50vh;
+                justify-content: start;
+                padding-left: 0;
+                position: relative;
+                width: 100vw;
+                flex-direction: column;
+
+            }
+            #cuadro_Gris{
+                z-index: 1;
+                transform: translate(0,0);
+                height: 100%; 
+            
+            }
+            #cuadro_color{
+                z-index: 1;
+                width: 60%;
+        
+            }
+        .textos_service{
+                padding-left: 50px;
+        }
+        .paginacion_ser{
+                display: none;
+        }
+        .btn_vi_all_ser:hover{
+
+                background-color: white;
+
+        }
+        .btn_vi_all_ser{
+            border: white;
+            color: #DF991B!important;
+        
+        }
+        .footer-textos span{
+            font-size: 20px !important;
+
+        }
+
+        .footer-textos p{
+            font-size: 26px !important;
+
+        }
+
+        .news {
+            transform: translate(0, 0);
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .footer-form {
+        
+            align-items: center;
+        }
+        .footer-text p{
+            font-size: 10px;
+        
+        }
+        .footer-text {
+            display: grid;
+            grid-template-columns: repeat(4, 0.2fr);
+            gap: 0;
+            padding-left: 65px;
+        }
+        #logo_footer{
+            width: 110px;
+            position: absolute;
+            transform: translate(160%,-50%);
         }
       }
