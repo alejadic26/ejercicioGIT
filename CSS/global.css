@@ -808,6 +808,12 @@ html {
         .textos_service{
                 padding-left: 50px;
         }
+        .textos_service span{
+            font-size: 22px;
+    }
+    .textos_service h2{
+        font-size: 32px;
+}
         .paginacion_ser{
                 display: none;
         }
