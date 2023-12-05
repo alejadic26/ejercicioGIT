@@ -3,23 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="/CSS/global.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/font.css" type="text/css">
     <title>Luxury_Ale</title>
 </head>
 <body>
     <!--Barra de Navegación-->
-    <header>
-        <nav>    
-            <img src="./IMG/uniq.png" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <header class="navbar_header">
+        <nav class="navbar_nav">   
+           <a href="/">
+            <img src="/IMG/Logo.png" alt="uniq" class="navbar_logos">
+            <a href="#" class="move_l">
+                <svg class="logo_move" id="svg-replaced" fill="none" viewBox="0 0 40 40" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <circle stroke="white" r="19.5" cy="20" cx="20"></circle>
+                    <path fill="white" d="M36.5731 20.0009C36.5731 29.1535 29.1535 36.5731 20.0009 36.5731C10.8483 36.5731 3.42871 29.1535 3.42871 20.0009C3.42871 10.8483 10.8483 3.42871 20.0009 3.42871C29.1535 3.42871 36.5731 10.8483 36.5731 20.0009ZM25.3548 26.6829H26.2794C27.547 26.6829 28.5462 26.3328 29.277 25.6326C30.0077 24.9323 30.7384 23.7145 31.4692 21.9639C31.5736 21.7355 31.663 21.6289 31.7824 21.6289H31.8718H31.9315L30.7981 27.2919C30.1568 27.094 28.8892 26.9874 26.9953 26.9874H18.6737V26.8656C18.6737 26.7591 18.7781 26.6982 19.0018 26.6373C19.0738 26.6226 19.1489 26.6063 19.2266 26.5895C19.3903 26.554 19.5654 26.516 19.7475 26.4851C20.0308 26.4242 20.2694 26.2415 20.4931 25.937C20.7168 25.6326 20.8212 25.2063 20.8212 24.6431V14.7025C20.8212 14.2458 20.7168 13.8957 20.4931 13.6522C20.2694 13.4086 20.0308 13.2564 19.7624 13.2107C19.5885 13.1811 19.4272 13.1451 19.2743 13.1111L19.2743 13.1111C19.1911 13.0925 19.1105 13.0745 19.0317 13.0585C18.808 12.9976 18.7036 12.9215 18.7036 12.8301V12.7083H25.6978V12.8301C25.6978 12.9367 25.5785 13.0128 25.3548 13.0585C25.1311 13.1194 24.8776 13.165 24.6092 13.2107C24.3407 13.2564 24.0872 13.4086 23.8635 13.6674C23.6398 13.9262 23.5205 14.2763 23.5205 14.7178V19.8326V24.9475C23.5205 25.5108 23.6696 25.9522 23.953 26.2415C24.2363 26.5459 24.7135 26.6829 25.3548 26.6829ZM13.7279 25.3916C14.1882 26.0172 14.9556 26.3915 16.0226 26.522V27.0068C12.1217 26.9395 10.1641 25.1886 10.1641 21.7679V14.6704C10.1641 14.2212 10.0593 13.8768 9.83471 13.6372C9.62508 13.3976 9.37052 13.2479 9.11597 13.2029C8.92584 13.1694 8.73571 13.1275 8.5643 13.0897L8.56427 13.0897C8.5062 13.0769 8.45027 13.0646 8.39723 13.0532C8.18759 12.9933 8.0678 12.9184 8.0678 12.8286V12.7088H15.0456V12.8286C15.0456 12.9334 14.9557 12.9933 14.791 13.0532C14.6113 13.0981 14.4167 13.143 14.1921 13.173C13.9675 13.2029 13.7429 13.3077 13.5332 13.4725C13.3236 13.6372 13.1739 13.8768 13.099 14.1613C12.9343 14.5955 12.8444 15.0896 12.8444 15.6736V21.9177C12.8444 23.445 13.1439 24.598 13.7279 25.3916Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+            </a>
+        
+            </a>
+            <div class="navbar_links">
+                <a href="./PaginaWeb.html" class="navbar_letrag lin" id="text_nav"><strong>LOGIN</strong></a>
+                <a href="./PaginaWeb.html" class="navbar_letrag lin" id="text_nav">|</a>
+                <a href="./PaginaWeb.html" class="navbar_letrab lin" id="text_nav"><strong>SING UP</strong></a>
+                <a href="./PaginaWeb.html" class="navbar_letrag lin" id="text_nav"></a>
+                <a href="./PaginaWeb.html" class="navbar_letrag lin" id="text_nav"></a>
+                <a href="./PaginaWeb.html" class="navbar_letrag lin" id="text_nav">ESP</a>
+                <a href="./PaginaWeb.html" class="navbar_letrab lin" id="text_nav"><strong>ENG</strong></a>
+            </div>
+            <div class="navbar_lineas">
+                <img src="/IMG/lineas.png" alt="lineas_menu" id="lineas">
+            </div>
         </nav>
-
     </header>
-    
+    <section class="image_present">
+        <img src="/IMG/casa.png" alt="casa_presentacion" class="var_presetation">
+        <div class="p1">
+            <input type="text" placeholder="Ex. New York" id="p2">
+            <img src="/IMG/lupa.png" alt="lupa" id="lupa_buscar">
+        </div>
+        <div class="container_lux">
+            <p id="lu">Luxury</p>
+            <p id="re">Real Estate</p>
+        </div>
+        <div class="contenedor_viewall">
+            <img src="/IMG/arrow-right-solid.svg" alt="flecha" id="flecha">
+            <p id="btn_all">View all properties</p>    
+        </div>
+    </section>
+
+    <div class="container_section_vertival_social">
+        <p id="seguir">FOLLOW</p>
+        <div class="linea-vertical"></div>
+        <a href="https://ec.linkedin.com/" target="parent"><img src="/IMG/linkedin.svg" alt="linkelin" class="social"></a>
+        <a href="https://twitter.com/" target="parent"><img src="/IMG/twitter.svg" alt="twitter" class="social"></a>
+        <a href="https://www.facebook.com/" target="parent"><img src="/IMG/facebook-f.svg" alt="facebook" class="social"></a>
+        <a href="https://www.instagram.com/" target="parent"></a><img src="/IMG/instagram.svg" alt="instagram" class="social"></a>
+        <a href="https://www.youtube.com/" target="parent"></a><img src="/IMG/youtube.svg" alt="youtobe" class="social"></a>
+    </div>
+    <div class="contenedor_textos_gal_izq">
+        <div class="contenedor_imag_izq">
+            <div class="img_der_gal_izq mitad_izq">
+                <img src="/IMG/scott-lorsch.png" alt="scocia">
+                <div class="textos_internos_izq">
+                    <p id="mex_text_izq"><img src="/IMG/castillo.svg" alt="castillo" id="castillo_izq">mex</p>  
+                    <h3>dddd</h3>     
+                </div>
+            </div>
+            <div class="img_der_gal_izq">
+                <img src="/IMG/derek-thomson-.png" alt="glaslow">
+                <div class="textos_internos_izq">
+                    <p id="mex_text_izq"><img src="/IMG/castillo.svg" alt="castillo" id="castillo_izq">England</p>
+                    <h3>Glasgow</h3>
+                </div>
+            </div>
+            <div class="img_der_gal_izq">
+                <img src="/IMG/daniel-barnes.png" alt="france">
+                <div class="textos_internos_izq">
+                    <p id="mex_text_izq"><img src="/IMG/castillo.svg" alt="castillo" id="castillo_izq">France</p>
+                    <h3>Marseilles</h3>
+                </div>
+            </div>
+        </div>
+        <div class="contenido_textos_izq">
+            <div class="textos_izq">
+                <span>Worldwide gallery</span>
+                <h2>Properties for sale</h2>
+            </div>
+            <div class="botones_der">
+                <button class="paginacion_der">
+                <img src="/IMG/menor.svg" alt="flechaiz" id="f_der">
+                   PREV
+                </button>
+                <button class="btn_vi_all_der">View all properties</button>
+                <button class="paginacion_der">NEXT
+                    <img src="/IMG/mayor.svg" alt="flechader" id="f_der">
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <!--Segunda Galeria-->
+        <div class="contenedor_textos_gal">
+            <div class="contenido_textos">
+                <div class="textos">
+                    <span>Worldwide gallery</span>
+                    <h2>Properties for rent</h2>
+                    <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.</p>
+                </div>
+                <div class="botones">
+                    <button class="paginacion_izq">
+                        <img src="/IMG/menor.svg" alt="flecha_izq_d" id="f_izq">
+                        PREV
+                    </button>
+                    <button class="btn_vi_all">View all properties</button>
+                    <button class="paginacion_izq">NEXT
+                        <img src="/IMG/mayor.svg" alt="flecha_der_d" id="f_izq">
+                    </button>
+                </div>
+            </div>
+            <div class="contenedor_imag_der">
+                <div class="img_der_gal ">
+                    <img src="/IMG/carcasone.png" alt="francia">
+                    <div class="textos_internos_der">
+                        <p id="mex_text"><img src="/IMG/castillo.svg" alt="castillo" id="castillo">France </p>  
+                        <h3>Carcassonne</h3>     
+                    </div>
+                </div>
+                <div class="img_der_gal">
+                    <img src="/IMG/munich.png" alt="munich">
+                    <div class="textos_internos_der">
+                        <p id="mex_text"><img src="/IMG/castillo.svg" alt="castillo" id="castillo">Germany</p>
+                        <h3>Munich</h3>
+                    </div>
+                </div>
+                <div class="img_der_gal mitad">
+                    <img src="/IMG/luxury-home-with-swimming.png" alt="mit">
+                    <div class="textos_internos_der">
+                        <p id="mex_text"><img src="/IMG/castillo.svg" alt="castillo" id="castillo">France</p>
+                        <h3>Clo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <!--developers-->
+        <div class="contenedor_desarrollo">
+            <div class="contenedor_texto_dev">
+                <div class="contenedor_texto_dev">
+                    <span>Luxury properties</span>
+                    <h2>Developments</h2>
+                </div>
+            </div>
+            <div class="contenedor_imagenes_dev" >
+                <div class="img_gal_deve ">
+                    
+                    <img src="/IMG/surface.png" alt="Surfside" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">The Surf Row</p>  
+                        <h4>Surfside</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/vero.png" alt="VeroBeach" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">Indigo</p>  
+                        <h4>Vero Beach</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/bahamas.png" alt="Bahamas" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">Rosewood - Baha Mar</p>  
+                        <h4>Nassau, the Bahamas</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/miami.png" alt="Miami" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">St. Regis - The Astor Tower</p>  
+                        <h4>Brickell, Miami</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/coral_ga.png" alt="Coral" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">Giralda Place</p>  
+                        <h4>Coral Gables</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/brick.png" alt="Brickel" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">St. Regis - The William Tower</p>  
+                        <h4>Brickell, Miami</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/solterre.png" alt="Nevis" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">Solterre at Cockleshell Bay</p>  
+                        <h4>St. Kitts and nevis</h4>     
+                    </div>
+                </div>
+                <div class="img_gal_deve ">
+                    <img src="/IMG/grove.png" alt="Grove" id="img_int">
+                    <div class="textos_internos_deve">
+                        <p id="text_dev_img">Urbin</p>  
+                        <h4>Coconut Grove</h4>     
+                    </div>
+                </div>
+        </div>
+        <!-- Services-->
+        <div class="contenedor_services">
+            <div class="contenedor_imag_services">
+                
+                    <img src="/IMG/cuadro_gris.png" alt="foto_posterior" id="cuadro_Gris">
+                    <img src="/IMG/cuadro.png" alt="cuadro" id="cuadro_color">
+                
+            </div>
+            <div class="contenedor_texto_services">
+                <div class="lineas_logo">
+                    <img src="/IMG/log.png" alt="logo">
+                   
+
+                </div>
+                
+                <div class="textos_service">
+                    <span>Services</span>
+                    <h2>Art Curation & Interior Design</h2>
+                    <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.</p>
+                </div>
+                <div class="botones_ser">
+                    <button class="paginacion_ser">
+                    <img src="/IMG/menor.svg" alt="flechaizser" id="f_ser">
+                       PREV
+                    </button>
+                    <button class="btn_vi_all_ser">View all properties</button>
+                    <button class="paginacion_ser">NEXT
+                        <img src="/IMG/mayor.svg" alt="flechaderser" id="f_ser">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="news">
+                <div class="footer-textos">
+                    <span>Join the list</span>
+                    <p>Unlock the exclusive world</p>
+                </div>
+                <div class="footer-form">
+                    <span>Name:</span>
+                    <input type="text" placeholder="Ex. name@mail.com" />
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="info">
+                <div class="footer-text">
+                    <div>
+                        <p>
+                            <img src="/IMG/Logo.png" alt="logofooter" id="logo_footer">
+                            
+                        </p>
+                        <p>Become a New Uniq Artist</p>
+                        <p>Become a Commercial Partner</p>
+                    </div>
+                    <div>
+                        <p>Suites</p>
+                        <p>Cities</p>
+                        <p>Villas</p>
+                    </div>
+                    <div>
+                        <p>Houses Apartaments Contact us</p>
+                        <p></p>
+                        <p>Apartaments </p>
+                        <p>Contact us</p>
+                    </div>
+                    <div>
+                        <p>Call Center</p>
+                        <p>+52 55 6840 4000</p>
+                        <p>concierge@uniqluxury.com</p>
+                    </div>
+                </div>
+              <div class="footer-bar"></div>
+              <p class="copyright">Copyright © 2022</p>
+            </div>
+          </footer>
+ 
 </body>
 </html>
