@@ -11,9 +11,9 @@ function numeroDeElementos(numeroF){
             acumAct=acumAnt+acumAct;
             fibonacci.push(acumAnt)
         }
-        alert("La serie de Fibonacci es: "+fibonacci);
+        console.log("La serie de Fibonacci es: "+fibonacci);
     }else{
-        alert("El valor ingresado no es numérico, intente nuevamente")
+        console.log("El valor ingresado no es numérico, intente nuevamente")
     }
 }
 numeroDeElementos("poner el valor a evaluar aqui")
