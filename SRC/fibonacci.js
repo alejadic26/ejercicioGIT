@@ -13,7 +13,7 @@ function numeroDeElementos(numeroF){
         }
         alert("La serie de Fibonacci es: "+fibonacci);
     }else{
-        alert("El valor ingresado no es numérico, intente nuevamnete")
+        alert("El valor ingresado no es numérico, intente nuevamente")
     }
 }
-numeroDeElementos(8)
+numeroDeElementos("poner el valor a evaluar aqui")
